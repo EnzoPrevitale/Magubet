@@ -33,7 +33,7 @@ let fazerAposta = (valor) => new Promise((resolve, reject) => {
 });
 
 btn.addEventListener("click", () => {
-    odd = Math.random() * 2 + 1;
+    odd = Math.floor(Math.random() * 10) + 1;
     fazerAposta(Number(prompt("Digite o valor que deseja apostar. Odd: " + odd)))
         .then(alert)
         .catch(alert)
